@@ -1,3 +1,5 @@
+use COPS_Cluster
+
 drop table COPS_Cluster.dbo.CycleExecution_FoodLed
 CREATE TABLE COPS_Cluster.[dbo].[CycleExecution_FoodLed](
        [Year] [int] NULL,
@@ -161,6 +163,7 @@ CONCAT(dd.[date],df.FieldSalesRepKey,dp.PointOfPurchaseKey,ISNULL(m.manager,'Unk
 ISNULL(m.subcountry,dp.country),
 fo.[IsResponseOfInterest]
 
+use COPS_Cluster
 drop table [dbo].[LineManagerTimeinTrade_FoodLed]
 CREATE TABLE [dbo].[LineManagerTimeinTrade_FoodLed](
        [Year] [int] NULL,
